@@ -1,0 +1,14 @@
+### list new shopping items
+GET http://localhost:3000/shopping-items
+
+### create new shopping items
+POST http://localhost:3000/shopping-items
+Content-Type: application/json
+
+{
+    "name": "Beans and dodo"
+}
+
+
+### delete new shopping items
+DELETE http://localhost:3000/shopping-items/6e34f8e7-7a2f-4e27-8386-06ee0b0c67fa

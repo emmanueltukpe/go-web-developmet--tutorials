@@ -1,0 +1,32 @@
+### get all movies
+GET http://localhost:3000/movies
+
+### get movie
+GET http://localhost:3000/movies/2
+
+###  create a new movie
+POST http://localhost:3000/movies
+
+{
+    "isbn": "39202939",
+    "title": "It is sll lies",
+    "director": {
+        "firstname": "John",
+        "lastname": "Kraken"
+    }
+}
+
+### delete a movie
+DELETE http://localhost:3000/movie/2
+
+### update a movie
+PUT http://localhost:3000/movie/791947779410
+
+{
+    "isbn": "39202939",
+    "title": "It is all lies",
+    "director": {
+        "firstname": "firstname",
+        "lastname": "lastname"
+    }
+}
