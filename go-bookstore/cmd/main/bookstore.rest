@@ -1,0 +1,11 @@
+###
+GET http://localhost:3000/book
+
+###
+POST http://localhost:3000/book
+
+{
+    "Name": "Lovers",
+    "Author": "LoveCraft",
+    "Publication": "Publication",
+}
