@@ -3,9 +3,9 @@ package main
 import (
 	"log"
 	"net/http"
-	"github.com/gorilla/mux"
-	_ "github.com/mattn/go-sqlite3"
+
 	"github.com/emmanueltukpe/go-bookstore/pkg/routes"
+	"github.com/gorilla/mux"
 )
 
 func main() {

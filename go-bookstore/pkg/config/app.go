@@ -1,21 +1,20 @@
 package config
 
 import (
-	"github.com/jinzhu/gorm"
-	_ "github.com/mattn/go-sqlite3"
+	"gorm.io/driver/sqlite"
+	"gorm.io/gorm"
 )
 
 var (
-	db * gorm.DB
+	db *gorm.DB
 )
 
-func Connect(){
-	d, err := gorm.Open("sqlite3", "./gorm.db")
-	 if err != nil {
-		panic(err) 
-	 }
-	 db = d
-	 //defer d.Close()
+func Connect() {
+	d, err := gorm.Open(sqlite.Open("gorm.db"), &gorm.Config{})
+	if err != nil {
+		panic(err)
+	}
+	db = d
 }
 
 func GetDB() *gorm.DB {
